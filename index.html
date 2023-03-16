@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Frontend Mentor | Notifications page</title>
+  </head>
+  <body>
+    <main class="px-4 bg-white max-w-[45.625rem] sm:rounded-2xl sm:mx-auto md:px-[1.875rem] sm:shadow-cardShadow sm:mt-16">
+      <h1 class="sr-only">Notification Component - Frontend Mentor Challenge</h1>
+
+      <header class="flex justify-between py-6 md:py-8">
+        <div class="flex items-center gap-5">
+          <h2>Notification</h2>
+          <span
+            class="text-white text-center text-base rounded-md bg-primaryBlue h-[25px] w-8 inline-block"
+            id="notification-num">
+            3
+          </span>
+        </div>
+        <span class="hover-effect" id="all-read"> Mark all as read</span>
+      </header>
+
+      <div class="grid gap-2">
+        <!-- CARD 1 -->
+        <div class="unread-card p-4 flex gap-3 md:px-5" id="notification">
+          <img src="./assets/images/avatar-mark-webber.webp" alt="Mark Webber" class="h-10 w-10 md:h-[45px] md:w-[45px]" />
+          <div>
+            <p>
+              <a href="#" class="font-extrabold text-blue900 hover-effect">Mark Webber </a>
+              reacted to your recent post
+              <a href="#" class="font-extrabold hover-effect"> My first tournament today!</a>
+            </p>
+            <span class="text-blue500 cursor-pointer inline-block">1m ago</span>
+          </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="unread-card p-4 flex gap-3 md:px-5" id="notification">
+          <img src="./assets/images/avatar-angela-gray.webp" alt="Angela Gray" class="h-10 w-10 md:h-[45px] md:w-[45px]" />
+          <div>
+            <p>
+              <a href="#" class="font-extrabold text-blue900 hover-effect">Angela Gray </a>
+              followed you
+            </p>
+            <span class="text-blue500 cursor-pointer inline-block">5m ago</span>
+          </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="unread-card p-4 flex gap-3 md:px-5" id="notification">
+          <img
+            src="./assets/images/avatar-jacob-thompson.webp"
+            alt="Jacob Thompson"
+            class="h-10 w-10 md:h-[45px] md:w-[45px]" />
+          <div>
+            <p>
+              <a href="#" class="font-extrabold text-blue900 hover-effect">Jacob Thompson </a>
+              has joined your group
+              <a href="#" class="font-extrabold hover-effect"> Chess Club</a>
+            </p>
+            <span class="text-blue500 cursor-pointer inline-block">1 day ago</span>
+          </div>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="p-4 flex gap-3 md:px-5">
+          <img
+            src="./assets/images/avatar-rizky-hasanuddin.webp"
+            alt="Rizky Hasanuddin"
+            class="h-10 w-10 md:h-[45px] md:w-[45px]" />
+          <div>
+            <p>
+              <a href="#" class="font-extrabold text-blue900 hover-effect">Rizky Hasanuddin </a>
+              sent you a private message
+            </p>
+            <a href="#" class="text-blue500 cursor-pointer inline-block">5 days ago</a>
+            <div class="message mt-2 p-4 border-[1px] border-blue100 lg:p-5 rounded-md">
+              <p>
+                Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now
+                and I'm already having lots of fun and improving my game.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 5 -->
+        <div class="p-4 flex gap-3 md:px-5">
+          <img
+            src="./assets/images/avatar-kimberly-smith.webp"
+            alt="Kimberly Smith"
+            class="h-10 w-10 md:h-[45px] md:w-[45px]" />
+          <div>
+            <div class="flex gap-7 justify-between">
+              <p>
+                <a href="#" class="font-extrabold text-blue900 hover-effect">Kimberly Smith </a>
+                commented on your picture
+              </p>
+            </div>
+            <span class="text-blue500 cursor-pointer inline-block">1 week ago</span>
+          </div>
+          <img
+            src="./assets/images/image-chess.webp"
+            alt="Girl playing chess"
+            class="h-10 w-10 md:h-[45px] md:w-[45px] ml-auto" />
+        </div>
+
+        <!-- CARD 6 -->
+        <div class="p-4 flex gap-3 md:px-5">
+          <img
+            src="./assets/images/avatar-nathan-peterson.webp"
+            alt="Nathan Peterson"
+            class="h-10 w-10 md:h-[45px] md:w-[45px]" />
+          <div>
+            <p>
+              <a href="#" class="font-extrabold text-blue900 hover-effect">Nathan Peterson </a>
+              reacted to your recent post
+              <a href="#" class="font-extrabold hover-effect">
+                5 end-game strategies to increase your win rate
+                </a>
+            </p>
+            <span class="text-blue500 cursor-pointer inline-block">2 weeks ago</span>
+          </div>
+        </div>
+
+        <!-- CARD 7 -->
+        <div class="p-4 flex gap-3 md:px-5">
+          <img src="./assets/images/avatar-anna-kim.webp" alt="Anna Kim" class="h-10 w-10 md:h-[45px] md:w-[45px]" />
+          <div>
+            <p>
+              <a href="#" class="font-extrabold text-blue900 hover-effect">Anna Kim </a>
+              left the group
+              <a href="#" class="font-extrabold hover-effect"> Chess Club</a>
+            </p>
+            <span class="text-blue500 cursor-pointer inline-block">2 weeks ago<span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+
+    <div class="text-xs text-center my-3 flex flex-col gap-2 justify-center">
+      <p>
+        Challenge by
+        <a href="https://www.frontendmentor.io/challenges/notifications-page-DqK5QAmKbC" target="_blank" class="text-primaryBlue font-extrabold"> Frontend Mentor</a>.
+      </p>
+      <p>
+        Coded by 
+        <a href="https://www.frontendmentor.io/profile/jwalczak94" target="_blank" class="text-primaryRed font-extrabold"> Joanna</a>.
+      </p>
+    </div>
+    <script src="notification.js"></script>
+  </body>
+</html>
