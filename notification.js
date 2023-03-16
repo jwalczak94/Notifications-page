@@ -2,8 +2,7 @@
 
 const allRead = document.querySelector("#all-read"),
   notificationNum = document.querySelector("#notification-num"),
-  notificationCard = document.querySelectorAll("#notification"),
-  unreadIcon = document.querySelectorAll(".unread");
+  notificationCard = document.querySelectorAll(".post");
 
 let notification = notificationCard.length;
 
@@ -18,7 +17,7 @@ notificationCard.forEach((card) => {
   card.addEventListener("click", function () {
     if (notification > 0) {
       notification = notification - 1;
-      this.classList.remove("unread-card");
+      card.classList.remove("unread-card");
       notificationNum.innerHTML = `${notification}`;
     }
   });
